@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    width: 1440px;
+    min-height: 100vh;
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 12.5px;
+    background-color: #FFFFFF;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 12.5px;
+    border-top-right-radius: 12.5px;
+}
+
+.container .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2rem 3rem;
+    color: #000042ce;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.text h2 {
+    font-weight: 900;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.plan {
+    display: flex;
+    flex-direction: row;
+    min-height: 4rem;
+    width: auto;
+    border-radius: 12.5px;
+    margin: 0 3rem;
+    align-items: center;
+    background-color: #f5f7ff;
+    font-size: 1rem;
+}
+
+.plan img {
+    width: 13%;
+    margin: auto 1rem;
+}
+
+.plan .change {
+    margin-left: 6rem;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 3rem;
+}
+
+.btns button {
+    margin: 0.5rem 0 0 0;
+    padding: 1rem;
+    border-radius: 12.5px;
+    border: 0;
+    background-color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform .2s;
+}
+
+.btns button:first-child {
+    background-color: #3829e0;
+    color: #FFFFFF;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 1vh;
+}
+
+
+@media (max-width: 376px) {
+    .container .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 2rem 2rem;
+        color: #000042ce;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    .plan {
+        display: flex;
+        flex-direction: row;
+        min-height: 4rem;
+        border-radius: 12.5px;
+        width: auto;
+        margin: 0 2rem;
+        align-items: center;
+        background-color: #f5f7ff;
+        font-size: 1rem;
+    }
+
+    .plan .change {
+        margin-left: 3rem;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 2rem;
+    }
+
+    .container {
+        width: 90%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 12.5px;
+        background-color: #FFFFFF;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 1vh;
+        font-size: 0.8rem;
+    }
+}
