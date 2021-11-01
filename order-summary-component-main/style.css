@@ -17,7 +17,7 @@ body {
     width: 1440px;
     min-height: 100vh;
     background-image: url('./images/pattern-background-desktop.svg');
-    background-color: hsl(225, 100%, 94%);
+    background-color: #e0e8ff;
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
@@ -107,6 +107,7 @@ body {
 
 button:hover {
     transform: scale(1.1);
+    box-shadow: 0 0.8rem 0.8rem #e0e8ff ;
 }
 
 .attribution {
